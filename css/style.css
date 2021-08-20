@@ -1,0 +1,12 @@
+body {
+  background-color: white;
+  color: indigo;
+}
+
+#id-main-container {
+  width: 60%;
+  height: auto;
+  box-shadow: 0 0 5px indigo;
+  background-color: rgba(0, 0, 0, 0.466);
+  margin: 0 auto;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fork Me! FCC: Test Suite Template</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <main id="id-main-container">
+      <header><!--header of the document-->
+        <h1 id='title'> “Football Survey Form”</h1>
+        <p id='description'>Complete your registration</p>
+      </header>
+
+      <form id="survey-form">
+
+        <div id="id-getUserInfos"><!--gets the user infos and let him chose one player from the dropdown-->
+          <!--fieldset to enter information-->
+          <label id="name-label">Name</label>
+          <input id="name" type="text" required placeholder="input your name">
+
+          <label id="email-label">Email</label>
+          <input id="email" type="email" required placeholder="input your email">
+
+          <label id="number-label">Age</label>
+          <input id="number" type="number" required max="70" min="18" placeholder="age">
+
+          <select id="dropdown"><!--dropdown buttons-->
+            <option selected>Select your favorite player</option>
+            <option>Neymar</option> 
+            <option>Messi</option> 
+            <option>Cristiano Ronaldo</option> 
+          </select>
+        </div>
+
+        <div id="id-select-one-team"><!--let the user select one team with the radio button-->
+            <h3>What is your favorite team? (select one!)</h3>
+            <!--radio buttons-->
+            <input type="radio" id="id-psg-radio" value="PSG Team">
+            <label for="id-psg-radio">PSG Team</label><br>
+            <input type="radio" id="id-barcelona-radio" name="Team" value="Barcelona">
+            <label for="id-barcelona-radio">Barcelona Team</label><br>
+            <input type="radio" id="id-real-madrid-radio" name="Team" value="Real Madrid">
+            <label for="id-real-madrid-radio">Real Madrid Team</label>
+        </div>  
+
+        <div id="id-select-one-or-more-teams"><!--let the user select one or more teams with the checkboxs-->
+            <h3>In wich Team would you like to play? (Select one or more!)</h3>
+            <!--checkboxs to select the teams-->
+            <input type="checkbox" id="id-psg-checkbox" name="Team" value="PSG Team">
+            <label for="id-psg-checkbox">PSG Team</label><br>
+            <input type="checkbox" id="id-barcelona-checkbox" name="Team" value="Barcelona">
+            <label for="id-barcelona-checkbox">Barcelona Team</label><br>
+            <input type="checkbox" id="id-real-madrid-checkbox" name="Team" value="Real Madrid">
+            <label for="id-real-madrid-checkbox">Real Madrid Team</label>
+        </div>
+
+        <div id="id-comment-and-submit"><!--let the user add more informations about him, then submit his form!-->
+          <p><textarea placeholder="additional informations that we have to know about you"></textarea></p>
+          <!--submit button-->
+          <p><input type="submit" id="submit" value="submit"></p>
+        </div>
+
+      </form>
+    </main>
+  </body>
+</html>
